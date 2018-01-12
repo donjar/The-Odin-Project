@@ -1,0 +1,126 @@
+body{
+	width: calc(100% - 8px);
+	margin: 4px 4px;
+}
+.navbar{
+	left: 4px;
+	top: 4px;
+	width: calc(100% - 10px);
+	position: absolute;
+}
+.menu{
+	margin: 5px;
+	float: right;
+}
+.menu li{
+	margin: 5px;
+	display: inline-block;
+	line-height: 16px;
+}
+.menu li a{
+	text-decoration: none;
+}
+.menu li a:hover{
+	color: red;
+}
+.main{
+	position: absolute;
+	left: 4px; 
+	top: 45px;
+	width: calc(100% - 10px);
+	height: 520px;
+}
+.center{
+	width: 50%;
+	height: 50%;
+	left: calc(4px + 25%);
+	top: 25%;
+	position: absolute;
+}
+.name{
+	width: 100%;
+}
+.name img{
+	align-content: center;
+	width:70%;
+	height: 100px;
+	position: absolute;
+	left: 15%;
+}
+.search{
+	width: 100%;
+	background-color: red;
+}
+.search form{
+	width: 90%;
+	position: absolute;
+	top: 110px;
+	left: 5%;
+}
+.two-buttons{
+	top: 160px;
+	width: 50%;
+	position: absolute;
+	left: 25%;
+}
+.button1{
+	float: left;
+}
+
+.button1{
+	float: right;
+}
+.lang-offered{
+	position: absolute;
+	top: 200px;
+	width: 60%;
+	left: 22%;
+}
+.lang-menu{
+	display: inline;
+}
+.lang-menu li{
+	display: inline;
+	margin-left: 8px;
+}
+.footer{
+	position: absolute;
+	left: 4px; 
+	bottom: 4px; 
+	width: calc(100% - 10px);
+	height: 80px;
+	background-color: #EEEEEE;
+}
+.footer1{
+	padding-left: 40px;
+	position: absolute;
+	top: 0px;
+	width: calc(100% - 44px);
+	padding: 4px 0px 4px 40px;
+}
+.footer2{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.left-footer{
+	float: left;
+
+}
+.left-footer-menu{
+	float: left;
+}
+.left-footer-menu li{
+	display: inline-block;
+	padding: 2px;
+	float: left;
+}
+.rigth-footer{
+}
+.right-footer-menu{
+	float: right;
+}
+.right-footer-menu li{
+	display: inline-block;
+	padding: 2px;
+}
