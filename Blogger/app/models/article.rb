@@ -4,6 +4,10 @@ class Article < ApplicationRecord
     has_many :tags, through: :taggings
 
     def tag_list
+        # Coba `self.tags.pluck(:name).join(', ')`.
+        # Bedanya `pluck` dengan `collect`: dengan `pluck` kita langsung mengambil
+        # name nya saja dari database, sedangkan dengan `collect`, kita ambil
+        # semuanya, kemudian kita proses di dalam memori.
         self.tags.collect do |tag|
             tag.name
         end.join(", ")

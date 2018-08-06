@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+    # Ini diajarin di tutorialnya yah? Ini bad practice, karena helper itu
+    # tujuannya buat ngebantu view doang, bukan buat ngebantu controller.
     include ArticlesHelper
 
     def index
@@ -18,6 +20,7 @@ class ArticlesController < ApplicationController
     def create 
         @article = Article.new(article_params)
         @article.save
+        # Bisa disingkat `redirect_to article_path(@article, notice: "Article ...")`
         flash.notice = "Article '#{@article.title}' created!"
         redirect_to article_path(@article)
     end

@@ -1,6 +1,7 @@
 <div>
     <h5> Comment by <%= comment.author_name %> </h5>
     <p class="comment"> <%= comment.body %> </p>
+    <%# Tulisannya bisa "Posted less than a minute later". Coba dicek lagi methodnya :) %>
     <p>Posted <%= distance_of_time_in_words(comment.article.created_at, comment.created_at) %> later</p>
     <br/>
 </div>
