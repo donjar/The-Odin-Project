@@ -1,4 +1,6 @@
+/* Perhatikan spacingnya: harusnya "body {" */
 body{
+  /* Coba gunakan border-box */
 	width: calc(100% - 8px);
 	margin: 4px 4px;
 }
@@ -21,10 +23,12 @@ body{
 	text-decoration: none;
 }
 .menu li a:hover{
+  /* emangnya merah warnanya? */
 	color: red;
 }
 .main{
 	position: absolute;
+  /* Sebisa mungkin jangan ngeker brapa px seperti ini. Coba gunakan macam 10% 20% begitu. Kalau nggak nanti di layar yang resolusinya beda bisa beda juga hasilnya */
 	left: 4px; 
 	top: 45px;
 	width: calc(100% - 10px);
@@ -63,6 +67,7 @@ body{
 	position: absolute;
 	left: 25%;
 }
+/* digabung yah .button1 nya */
 .button1{
 	float: left;
 }
@@ -91,6 +96,7 @@ body{
 	height: 80px;
 	background-color: #EEEEEE;
 }
+/* Gunakan nama class yang lebih deskriptif, selain .footer1 dan .footer2 */
 .footer1{
 	padding-left: 40px;
 	position: absolute;
@@ -115,6 +121,7 @@ body{
 	padding: 2px;
 	float: left;
 }
+/* class yang kosong seperti ini dibuang dulu yah */
 .rigth-footer{
 }
 .right-footer-menu{
